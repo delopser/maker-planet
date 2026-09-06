@@ -9,7 +9,6 @@ Interfaz web estática para "Maker Planet", desarrollada para exhibir arquitectu
 
 [Demo en Vivo](https://delopser8.github.io/maker-planet) | [Diseño en Figma](https://www.figma.com/design/ixcKn5POi257WDCrwFVoz2/trrabajo-sass?node-id=0-1&t=Lwu2lKvQxJA6K5rZ-1) | [Read in English 🇬🇧](README.md)
 
----
 
 ## Visión General
 
@@ -17,7 +16,6 @@ Maker Planet es un concepto de plataforma de comercio electrónico que unifica e
 
 El objetivo principal de este proyecto es demostrar los fundamentos clave del Frontend, aprovechando las capacidades nativas de CSS y HTML5 semántico para ofrecer una interfaz rica y adaptable (responsive) sin dependencias de JavaScript.
 
----
 
 ## Tecnologías y Restricciones
 
@@ -25,7 +23,6 @@ El objetivo principal de este proyecto es demostrar los fundamentos clave del Fr
 - **Sass (SCSS):** Arquitectura modular estructurada con mixins y utilidades de maquetación.
 - **Gestión de Estado con CSS Puro:** Componentes interactivos desarrollados mediante selectores nativos (`:checked`, `:target` y pseudoclases de estado).
 
----
 
 ## Arquitectura y Características
 
@@ -33,7 +30,6 @@ El objetivo principal de este proyecto es demostrar los fundamentos clave del Fr
 - **Diseño Adaptable (Responsive):** Enfoque *mobile-first* construido sobre CSS Grid y Flexbox.
 - **Rendimiento Optimizado:** Cero sobrecarga de ejecución en tiempo de JS, garantizando un despliegue veloz del primer renderizado de contenido (FCP).
 
----
 
 ## Guía del Proyecto
 
@@ -48,3 +44,7 @@ El objetivo principal de este proyecto es demostrar los fundamentos clave del Fr
    git clone https://github.com/delopser8/maker-planet.git
    cd maker-planet
    ```
+
+## Licencia
+
+MIT
