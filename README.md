@@ -9,7 +9,6 @@ Static e-commerce interface for "Maker Planet", built to showcase advanced Sass 
 
 [Live Demo](https://delopser8.github.io/maker-planet) | [Figma Design](https://www.figma.com/design/ixcKn5POi257WDCrwFVoz2/trrabajo-sass?node-id=0-1&t=Lwu2lKvQxJA6K5rZ-1) | [Leer en Español 🇪🇸](README.es.md)
 
----
 
 ## Overview
 
@@ -17,7 +16,6 @@ Maker Planet is a concept e-commerce platform unifying leading building-block to
 
 The primary objective of this project is to demonstrate core Frontend fundamentals, leveraging modern CSS and semantic HTML5 to deliver a rich, responsive UI without JavaScript dependencies.
 
----
 
 ## Tech Stack & Constraints
 
@@ -25,7 +23,6 @@ The primary objective of this project is to demonstrate core Frontend fundamenta
 - **Sass (SCSS):** Modular architecture utilizing mixins and layout utilities.
 - **Pure CSS State Management:** Primary UI interactive elements engineered using native selectors (`:checked`, `:target`, and state pseudo-classes).
 
----
 
 ## Architecture & Features
 
@@ -33,7 +30,6 @@ The primary objective of this project is to demonstrate core Frontend fundamenta
 - **Responsive Layout:** Mobile-first architecture built with CSS Grid and Flexbox.
 - **Performance Optimized:** Zero JavaScript execution overhead ensuring fast First Contentful Paint (FCP).
 
----
 
 ## Getting Started
 
@@ -49,7 +45,6 @@ The primary objective of this project is to demonstrate core Frontend fundamenta
    cd maker-planet
    ```
 
----
 
 ## License
 
