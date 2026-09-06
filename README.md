@@ -48,7 +48,9 @@ The primary objective of this project is to demonstrate core Frontend fundamenta
    git clone https://github.com/delopser8/maker-planet.git
    cd maker-planet
    ```
-   
-### License
+
+---
+
+## License
 
 MIT
