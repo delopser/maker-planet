@@ -5,7 +5,7 @@
 [![Figma](https://img.shields.io/badge/Figma_Design-F24E1E?style=flat-square&logo=figma&logoColor=white)](https://www.figma.com/design/ixcKn5POi257WDCrwFVoz2/trrabajo-sass?node-id=0-1&t=Lwu2lKvQxJA6K5rZ-1)
 [![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)](#)
 
-Static e-commerce interface for "Maker Planet", built to showcase advanced Sass architecture, semantic HTML5, and CSS-only state management under a zero-JavaScript constraint.
+Static e-commerce interface for "Maker Planet", built to showcase advanced Sass architecture, semantic HTML5, and CSS-only state management under a zero-JavaScript constraint
 
 [Live Demo](https://delopser8.github.io/maker-planet) | [Figma Design](https://www.figma.com/design/ixcKn5POi257WDCrwFVoz2/trrabajo-sass?node-id=0-1&t=Lwu2lKvQxJA6K5rZ-1) | [Leer en Español 🇪🇸](README.es.md)
 
