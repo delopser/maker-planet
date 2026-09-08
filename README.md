@@ -48,4 +48,4 @@ The primary objective of this project is to demonstrate core Frontend fundamenta
 
 ## License
 
-This project is open-source and available under the [MIT License](LICENSE).
+[MIT](LICENSE) - free to use, modify and distribute.
