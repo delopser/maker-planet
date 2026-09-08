@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="README.md">English</a> | <b>Español</b>
+  <a href="README.md">English</a> · <b>Español</b>
 </p>
 
 # Maker Planet
