@@ -47,4 +47,4 @@ El objetivo principal de este proyecto es demostrar los fundamentos clave del Fr
 
 ## Licencia
 
-Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](LICENSE).
+[MIT](LICENSE) - uso, modificación y distribución libre.
