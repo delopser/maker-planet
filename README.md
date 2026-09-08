@@ -1,3 +1,7 @@
+<p align="center">
+  <b>English</b> | <a href="README.es.md">Español</a>
+</p>
+
 # Maker Planet
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -7,7 +11,7 @@
 
 Static e-commerce interface for "Maker Planet", built to showcase advanced Sass architecture, semantic HTML5, and CSS-only state management under a zero-JavaScript constraint.
 
-[Live Demo](https://delopser8.github.io/maker-planet) | [Figma Design](https://www.figma.com/design/ixcKn5POi257WDCrwFVoz2/trrabajo-sass?node-id=0-1&t=Lwu2lKvQxJA6K5rZ-1) | [Leer en Español 🇪🇸](README.es.md)
+[Live Demo](https://delopser8.github.io/maker-planet) | [Figma Design](https://www.figma.com/design/ixcKn5POi257WDCrwFVoz2/trrabajo-sass?node-id=0-1&t=Lwu2lKvQxJA6K5rZ-1)
 
 
 ## Overview
