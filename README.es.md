@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="README.md">English</a> | <b>Español</b>
+</p>
+
 # Maker Planet
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
@@ -7,7 +11,7 @@
 
 Interfaz web estática para "Maker Planet", desarrollada para exhibir arquitectura Sass avanzada, HTML5 semántico y gestión de estado mediante CSS puro bajo una restricción de cero JavaScript.
 
-[Demo en Vivo](https://delopser8.github.io/maker-planet) | [Diseño en Figma](https://www.figma.com/design/ixcKn5POi257WDCrwFVoz2/trrabajo-sass?node-id=0-1&t=Lwu2lKvQxJA6K5rZ-1) | [Read in English 🇬🇧](README.md)
+[Demo en Vivo](https://delopser8.github.io/maker-planet) | [Diseño en Figma](https://www.figma.com/design/ixcKn5POi257WDCrwFVoz2/trrabajo-sass?node-id=0-1&t=Lwu2lKvQxJA6K5rZ-1)
 
 
 ## Visión General
