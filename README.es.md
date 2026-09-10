@@ -11,7 +11,7 @@
 
 Interfaz web estática para "Maker Planet", desarrollada para exhibir arquitectura Sass avanzada, HTML5 semántico y gestión de estado mediante CSS puro bajo una restricción de cero JavaScript.
 
-[Demo en Vivo](https://delopser8.github.io/maker-planet) | [Diseño en Figma](https://www.figma.com/design/ixcKn5POi257WDCrwFVoz2/trrabajo-sass?node-id=0-1&t=Lwu2lKvQxJA6K5rZ-1)
+[Demo en Vivo](https://delopser.github.io/maker-planet) | [Diseño en Figma](https://www.figma.com/design/ixcKn5POi257WDCrwFVoz2/trrabajo-sass?node-id=0-1&t=Lwu2lKvQxJA6K5rZ-1)
 
 
 ## Visión General
@@ -45,7 +45,7 @@ El objetivo principal de este proyecto es demostrar los fundamentos clave del Fr
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/delopser8/maker-planet.git
+   git clone https://github.com/delopser/maker-planet.git
    cd maker-planet
    ```
 

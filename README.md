@@ -11,7 +11,7 @@
 
 Static e-commerce interface for "Maker Planet", built to showcase advanced Sass architecture, semantic HTML5, and CSS-only state management under a zero-JavaScript constraint.
 
-[Live Demo](https://delopser8.github.io/maker-planet) | [Figma Design](https://www.figma.com/design/ixcKn5POi257WDCrwFVoz2/trrabajo-sass?node-id=0-1&t=Lwu2lKvQxJA6K5rZ-1)
+[Live Demo](https://delopser.github.io/maker-planet) | [Figma Design](https://www.figma.com/design/ixcKn5POi257WDCrwFVoz2/trrabajo-sass?node-id=0-1&t=Lwu2lKvQxJA6K5rZ-1)
 
 
 ## Overview
@@ -45,7 +45,7 @@ The primary objective of this project is to demonstrate core Frontend fundamenta
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/delopser8/maker-planet.git
+   git clone https://github.com/delopser/maker-planet.git
    cd maker-planet
    ```
 
