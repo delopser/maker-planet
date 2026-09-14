@@ -8,12 +8,13 @@
   <meta name="author" content="Sergio Delgado López">
   <title>Detalles producto de Lego</title>
   <link rel="icon" type="image/x-icon" href="/imagenes/favicon.ico">
-  <link rel="stylesheet" href="sass/detalles-prod-lego.scss">
+  <link rel="stylesheet" href="/sass/detalles-prod-lego.scss">
 </head>
 <body>
   
   <!-- HEADER, NAV -->
-  <div id="header-container-js"></div>
+  <!-- <div id="header-container-js"></div> -->
+   {% include "header.html" %}
 
 
     <!-- MAIN -->
@@ -21,7 +22,7 @@
 
         <!-- UBICACION WEB -->
         <section id="txt-ubicacion">
-          <span><a href="index.html">Inicio</a></span>
+          <span><a href="/">Inicio</a></span>
           <em>></em>
           <span>Productos de Lego</span>
           <em>></em>
@@ -33,16 +34,16 @@
         <section id="producto-cont">
           <div class="izquierda">
             <div class="imagenes-lateral">
-              <img src="imagenes/productos/lego/prod-starwars-1.webp" alt="Grogu™ con Aerocuna 1">
-              <img src="imagenes/productos/lego/prod-starwars-1-2.webp" alt="Grogu™ con Aerocuna 2">
-              <img src="imagenes/productos/lego/prod-starwars-1-3.webp" alt="Grogu™ con Aerocuna 3">
-              <img src="imagenes/productos/lego/prod-starwars-1-4.webp" alt="Grogu™ con Aerocuna 4">
+              <img src="/imagenes/productos/lego/prod-starwars-1.webp" alt="Grogu™ con Aerocuna 1">
+              <img src="/imagenes/productos/lego/prod-starwars-1-2.webp" alt="Grogu™ con Aerocuna 2">
+              <img src="/imagenes/productos/lego/prod-starwars-1-3.webp" alt="Grogu™ con Aerocuna 3">
+              <img src="/imagenes/productos/lego/prod-starwars-1-4.webp" alt="Grogu™ con Aerocuna 4">
             </div>
             <div class="main-image">
-              <img src="imagenes/productos/lego/prod-starwars-1.webp" alt="Grogu™ con Aerocuna 1">
-              <img src="imagenes/productos/lego/prod-starwars-1-2.webp" alt="Grogu™ con Aerocuna 2">
-              <img src="imagenes/productos/lego/prod-starwars-1-3.webp" alt="Grogu™ con Aerocuna 3">
-              <img src="imagenes/productos/lego/prod-starwars-1-4.webp" alt="Grogu™ con Aerocuna 4">
+              <img src="/imagenes/productos/lego/prod-starwars-1.webp" alt="Grogu™ con Aerocuna 1">
+              <img src="/imagenes/productos/lego/prod-starwars-1-2.webp" alt="Grogu™ con Aerocuna 2">
+              <img src="/imagenes/productos/lego/prod-starwars-1-3.webp" alt="Grogu™ con Aerocuna 3">
+              <img src="/imagenes/productos/lego/prod-starwars-1-4.webp" alt="Grogu™ con Aerocuna 4">
             </div>
           </div>
           
@@ -50,7 +51,7 @@
             <h2>Grogu™ con Aerocuna</h2>
             
             <a href="#reseñas" class="valoracion">
-                <img src="imagenes/productos/star.png" alt="Valoración">
+                <img src="/imagenes/productos/star.png" alt="Valoración">
                 <span>5.0 (1)</span>
             </a>
         
@@ -66,23 +67,23 @@
             <button>Añadir al carrito</button>
         
             <div>
-                <img src="imagenes/productos/not-minor-3.svg" alt="Advertencia">
+                <img src="/imagenes/productos/not-minor-3.svg" alt="Advertencia">
                 <p>¡Advertencia! Partes pequeñas.</p>
             </div>
         
             <div>
                 <div class="info-link">
-                    <img src="imagenes/footer/mapa.png" alt="Ubicación">
+                    <img src="/imagenes/footer/mapa.png" alt="Ubicación">
                     <p>Comprobar disponibilidad en tienda</p>
                     <span>></span>
                 </div>
                 <div class="info-link">
-                    <img src="imagenes/productos/caja.png" alt="Envíos">
+                    <img src="/imagenes/productos/caja.png" alt="Envíos">
                     <p>Envíos y devoluciones</p>
                     <span>></span>
                 </div>
                 <div class="info-link">
-                    <img src="imagenes/productos/instrucciones.png" alt="Instrucciones">
+                    <img src="/imagenes/productos/instrucciones.png" alt="Instrucciones">
                     <p>Instrucciones de construcción</p>
                     <span>></span>
                 </div>
@@ -90,17 +91,17 @@
         
             <div class="specs-grid">
                 <div class="spec-item">
-                    <img src="imagenes/productos/icono-edad.png" alt="Edad">
+                    <img src="/imagenes/productos/icono-edad.png" alt="Edad">
                     <p>10+</p>
                     <p>Edades</p>
                 </div>
                 <div class="spec-item">
-                    <img src="imagenes/productos/icono-piezas.png" alt="Piezas">
+                    <img src="/imagenes/productos/icono-piezas.png" alt="Piezas">
                     <p>1048</p>
                     <p>Piezas</p>
                 </div>
                 <div class="spec-item">
-                    <img src="imagenes/productos/hashtag.png" alt="Artículo">
+                    <img src="/imagenes/productos/hashtag.png" alt="Artículo">
                     <p>75403</p>
                     <p>Artículo</p>
                 </div>
@@ -164,7 +165,7 @@
               <div class="contenido">
                   <div class="valoracion-general">
                       <h3>Valoración general</h3>
-                        <p><img src="imagenes/estrellas.png" alt="5 estrellas" class="estrellas-icon"> 5.0 (1)</p>
+                        <p><img src="/imagenes/estrellas.png" alt="5 estrellas" class="estrellas-icon"> 5.0 (1)</p>
                       <p class="recomienda">100% de usuarios recomiendan este producto</p>
                   </div>
       
@@ -181,7 +182,7 @@
                   <div class="lista-reseñas">
                       <div class="reseña">
                           <time>Junio 18, 2025</time>
-                          <p class="rating">5.0 <img src="imagenes/estrellas.png" alt="5 estrellas" class="estrellas-icon"></p>
+                          <p class="rating">5.0 <img src="/imagenes/estrellas.png" alt="5 estrellas" class="estrellas-icon"></p>
                           <h3>Cunita Baby Yoda</h3>
                           <span class="autor">Virginia V</span>
                           <span class="recomienda">Sí, recomiendo este producto.</span>
@@ -198,11 +199,12 @@
 
 
   <!-- FOOTER -->
-  <div id="footer-container-js"></div>
+  <!-- <div id="footer-container-js"></div> -->
+   {% include "footer.html" %}
   
 
   <!-- inserción de HEADER y FOOTER con JS -->
-  <script type="module">
+  <!-- <script type="module">
     import loaderHTML from "./js/loaderHTML.js";
 
     const headerContainer = document.getElementById('header-container-js');
@@ -210,7 +212,7 @@
 
     const footerContainer = document.getElementById('footer-container-js');
     footerContainer.innerHTML = loaderHTML.loaderFooter();
-  </script>
+  </script> -->
   
 </body>
 </html>

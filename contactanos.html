@@ -8,12 +8,13 @@
   <meta name="author" content="Sergio Delgado López">
   <title>MakerPlanet</title>
   <link rel="icon" type="image/x-icon" href="/imagenes/favicon.ico">
-  <link rel="stylesheet" href="sass/contactanos.scss">
+  <link rel="stylesheet" href="/sass/contactanos.scss">
 </head>
 <body>
   
   <!-- HEADER, NAV -->
-  <div id="header-container-js"></div>
+  <!-- <div id="header-container-js"></div> -->
+  {% include "header.html" %}
 
 
   <!-- MAIN -->
@@ -52,7 +53,7 @@
         <div class="campo-cont">
           <label for="mensaje">Mensaje</label>
           <textarea placeholder="Introduce el mensaje..." id="mensaje" name="mensaje" required
-                    pattern=".{10,500}"
+                    minlength="10" maxlength="500"
                     title="El mensaje debe tener entre 10 y 500 caracteres."></textarea>
         </div>
 
@@ -69,11 +70,11 @@
 
 
   <!-- FOOTER -->
-  <div id="footer-container-js"></div>
-  
+  <!-- <div id="footer-container-js"></div> -->
+  {% include "footer.html" %}
 
   <!-- inserción de HEADER y FOOTER con JS -->
-  <script type="module">
+  <!-- <script type="module">
     import loaderHTML from "./js/loaderHTML.js";
 
     const headerContainer = document.getElementById('header-container-js');
@@ -81,7 +82,7 @@
 
     const footerContainer = document.getElementById('footer-container-js');
     footerContainer.innerHTML = loaderHTML.loaderFooter();
-  </script>
+  </script> -->
   
   
 </body>

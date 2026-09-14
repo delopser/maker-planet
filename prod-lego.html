@@ -8,12 +8,13 @@
   <meta name="author" content="Sergio Delgado López">
   <title>Productos de Lego</title>
   <link rel="icon" type="image/x-icon" href="/imagenes/favicon.ico">
-  <link rel="stylesheet" href="sass/prod-lego.scss">
+  <link rel="stylesheet" href="/sass/prod-lego.scss">
 </head>
 <body>
   
   <!-- HEADER, NAV -->
-  <div id="header-container-js"></div>
+  <!-- <div id="header-container-js"></div> -->
+  {% include "header.html" %}
 
 
     <!-- MAIN -->
@@ -21,7 +22,7 @@
 
         <!-- UBICACION WEB -->
         <section id="txt-ubicacion">
-          <span><a href="index.html">Inicio</a></span>
+          <span><a href="/">Inicio</a></span>
           <em>></em>
           <span>Productos de Lego</span>
         </section>
@@ -36,12 +37,12 @@
 
           <div class="hero-derecha">
             <figure>
-              <img src="imagenes/productos/lego/hero-yoda.png" alt="Producto LEGO imagen">
+              <img src="/imagenes/productos/lego/hero-yoda.png" alt="Producto LEGO imagen">
               <figcaption>
                 LEGO Yoda
                 <audio controls>
-                  <source src="audios/lego-sound.mp3" type="audio/ogg">
-                  <source src="audios/lego-sound.mp3" type="audio/mpeg">
+                  <source src="/audios/lego-sound.mp3" type="audio/ogg">
+                  <source src="/audios/lego-sound.mp3" type="audio/mpeg">
                   El navegador no soporta este audio.
                 </audio>
               </figcaption>
@@ -57,27 +58,27 @@
           <!-- productos star wars -->
           <h2>Productos de LEGO® Star Wars</h2>
           <article class="prod" style="position: relative;">
-            <img class="carrusel-img" src="imagenes/productos/lego/prod-starwars-img.png" alt="Imagen del carrusel de productos de Star Wars">
+            <img class="carrusel-img" src="/imagenes/productos/lego/prod-starwars-img.png" alt="Imagen del carrusel de productos de Star Wars">
             <div class="carrusel-prods">
               <div class="carrusel-card">
                 <div class="cont-img-prod">
-                  <a href="detalles-prod-lego.html">
-                    <img src="imagenes/productos/lego/prod-starwars-1.webp" alt="Producto LEGO Star Wars">
+                  <a href="/detalles-prod-lego/">
+                    <img src="/imagenes/productos/lego/prod-starwars-1.webp" alt="Producto LEGO Star Wars">
                   </a>
                 </div>
                 <div class="cont">
-                  <img class="icono" src="imagenes/productos/icono-edad.png" alt="incono edad">
+                  <img class="icono" src="/imagenes/productos/icono-edad.png" alt="incono edad">
                   <p>10+</p>
-                  <img class="icono" class="" src="imagenes/productos/icono-piezas.png" alt="incono piezas">
+                  <img class="icono" class="" src="/imagenes/productos/icono-piezas.png" alt="incono piezas">
                   <p>1048</p>
                 </div>
                 <div>
-                  <a href="detalles-prod-lego.html" class="prod-ttl">Grogu™ con Aerocuna</a>
+                  <a href="/detalles-prod-lego/" class="prod-ttl">Grogu™ con Aerocuna</a>
                 </div>
                 <div class="cont">
                   <p class="prod-price">99,99 €</p>
                   <button>
-                    <img class="icono" src="imagenes/productos/bolsa.png" alt="icono bolsa">
+                    <img class="icono" src="/imagenes/productos/bolsa.png" alt="icono bolsa">
                     Añadir al carrito
                   </button>
                 </div>
@@ -85,23 +86,23 @@
 
               <div class="carrusel-card">
                 <div class="cont-img-prod">
-                  <a href="detalles-prod-lego.html">
-                    <img src="imagenes/productos/lego/prod-starwars-2.webp" alt="Producto LEGO Star Wars">
+                  <a href="/detalles-prod-lego/">
+                    <img src="/imagenes/productos/lego/prod-starwars-2.webp" alt="Producto LEGO Star Wars">
                   </a>
                 </div>
                 <div class="cont">
-                  <img class="icono" src="imagenes/productos/icono-edad.png" alt="incono edad">
+                  <img class="icono" src="/imagenes/productos/icono-edad.png" alt="incono edad">
                   <p>9+</p>
-                  <img class="icono" class="" src="imagenes/productos/icono-piezas.png" alt="incono piezas">
+                  <img class="icono" class="" src="/imagenes/productos/icono-piezas.png" alt="incono piezas">
                   <p>640</p>
                 </div>
                 <div>
-                  <a href="detalles-prod-lego.html" class="prod-ttl">Infiltrado Sith de Darth Maul</a>
+                  <a href="/detalles-prod-lego/" class="prod-ttl">Infiltrado Sith de Darth Maul</a>
                 </div>
                 <div class="cont">
                   <p class="prod-price">69,99 €</p>
                   <button>
-                    <img class="icono" src="imagenes/productos/bolsa.png" alt="icono bolsa">
+                    <img class="icono" src="/imagenes/productos/bolsa.png" alt="icono bolsa">
                     Añadir al carrito
                   </button>
                 </div>
@@ -109,23 +110,23 @@
 
               <div class="carrusel-card">
                 <div class="cont-img-prod">
-                  <a href="detalles-prod-lego.html">
-                    <img src="imagenes/productos/lego/prod-starwars-3.webp" alt="Producto LEGO Star Wars">
+                  <a href="/detalles-prod-lego/">
+                    <img src="/imagenes/productos/lego/prod-starwars-3.webp" alt="Producto LEGO Star Wars">
                   </a>
                 </div>
                 <div class="cont">
-                  <img class="icono" src="imagenes/productos/icono-edad.png" alt="incono edad">
+                  <img class="icono" src="/imagenes/productos/icono-edad.png" alt="incono edad">
                   <p>10+</p>
-                  <img class="icono" class="" src="imagenes/productos/icono-piezas.png" alt="incono piezas">
+                  <img class="icono" class="" src="/imagenes/productos/icono-piezas.png" alt="incono piezas">
                   <p>1555</p>
                 </div>
                 <div>
-                  <a href="detalles-prod-lego.html" class="prod-ttl">Destructor Estelar Imperial</a>
+                  <a href="/detalles-prod-lego/" class="prod-ttl">Destructor Estelar Imperial</a>
                 </div>
                 <div class="cont">
                   <p class="prod-price">169,99 €</p>
                   <button>
-                    <img class="icono" src="imagenes/productos/bolsa.png" alt="icono bolsa">
+                    <img class="icono" src="/imagenes/productos/bolsa.png" alt="icono bolsa">
                     Añadir al carrito
                   </button>
                 </div>
@@ -133,23 +134,23 @@
 
               <div class="carrusel-card">
                 <div class="cont-img-prod">
-                  <a href="detalles-prod-lego.html">
-                    <img src="imagenes/productos/lego/prod-starwars-4.webp" alt="Producto LEGO Star Wars">
+                  <a href="/detalles-prod-lego/">
+                    <img src="/imagenes/productos/lego/prod-starwars-4.webp" alt="Producto LEGO Star Wars">
                   </a>
                 </div>
                 <div class="cont">
-                  <img class="icono" src="imagenes/productos/icono-edad.png" alt="incono edad">
+                  <img class="icono" src="/imagenes/productos/icono-edad.png" alt="incono edad">
                   <p>8+</p>
-                  <img class="icono" class="" src="imagenes/productos/icono-piezas.png" alt="incono piezas">
+                  <img class="icono" class="" src="/imagenes/productos/icono-piezas.png" alt="incono piezas">
                   <p>290</p>
                 </div>
                 <div>
-                  <a href="detalles-prod-lego.html" class="prod-ttl">Interceptor Jedi de Ahsoka</a>
+                  <a href="/detalles-prod-lego/" class="prod-ttl">Interceptor Jedi de Ahsoka</a>
                 </div>
                 <div class="cont">
                   <p class="prod-price">99,99€</p>
                   <button>
-                    <img class="icono" src="imagenes/productos/bolsa.png" alt="icono bolsa">
+                    <img class="icono" src="/imagenes/productos/bolsa.png" alt="icono bolsa">
                     Añadir al carrito
                   </button>
                 </div>
@@ -162,27 +163,27 @@
           <!-- productos harry potter -->
           <h2>Productos de LEGO® Harry Potter</h2>
           <article class="prod" style="position: relative;">
-            <img class="carrusel-img" src="imagenes/productos/lego/prod-harrypotter-img.webp" alt="Imagen del carrusel de productos de Star Wars">
+            <img class="carrusel-img" src="/imagenes/productos/lego/prod-harrypotter-img.webp" alt="Imagen del carrusel de productos de Star Wars">
             <div class="carrusel-prods">
               <div class="carrusel-card">
                 <div class="cont-img-prod">
-                  <a href="detalles-prod-lego.html">
-                    <img src="imagenes/productos/lego/prod-harrypotter-1.webp" alt="Producto LEGO Star Wars">
+                  <a href="/detalles-prod-lego/">
+                    <img src="/imagenes/productos/lego/prod-harrypotter-1.webp" alt="Producto LEGO Star Wars">
                   </a>
                 </div>
                 <div class="cont">
-                  <img class="icono" src="imagenes/productos/icono-edad.png" alt="incono edad">
+                  <img class="icono" src="/imagenes/productos/icono-edad.png" alt="incono edad">
                   <p>8+</p>
-                  <img class="icono" class="" src="imagenes/productos/icono-piezas.png" alt="incono piezas">
+                  <img class="icono" class="" src="/imagenes/productos/icono-piezas.png" alt="incono piezas">
                   <p>499</p>
                 </div>
                 <div>
-                  <a href="detalles-prod-lego.html" class="prod-ttl">Aventura en el Autobús Noctámbulo</a>
+                  <a href="/detalles-prod-lego/" class="prod-ttl">Aventura en el Autobús Noctámbulo</a>
                 </div>
                 <div class="cont">
                   <p class="prod-price">49,99 €</p>
                   <button>
-                    <img class="icono" src="imagenes/productos/bolsa.png" alt="icono bolsa">
+                    <img class="icono" src="/imagenes/productos/bolsa.png" alt="icono bolsa">
                     Añadir al carrito
                   </button>
                 </div>
@@ -190,23 +191,23 @@
 
               <div class="carrusel-card">
                 <div class="cont-img-prod">
-                  <a href="detalles-prod-lego.html">
-                    <img src="imagenes/productos/lego/prod-harrypotter-2.webp" alt="Producto LEGO Star Wars">
+                  <a href="/detalles-prod-lego/">
+                    <img src="/imagenes/productos/lego/prod-harrypotter-2.webp" alt="Producto LEGO Star Wars">
                   </a>
                 </div>
                 <div class="cont">
-                  <img class="icono" src="imagenes/productos/icono-edad.png" alt="incono edad">
+                  <img class="icono" src="/imagenes/productos/icono-edad.png" alt="incono edad">
                   <p>8+</p>
-                  <img class="icono" class="" src="imagenes/productos/icono-piezas.png" alt="incono piezas">
+                  <img class="icono" class="" src="/imagenes/productos/icono-piezas.png" alt="incono piezas">
                   <p>744</p>
                 </div>
                 <div>
-                  <a href="detalles-prod-lego.html" class="prod-ttl">Ollivanders™ y Túnicas de Madame Malkin</a>
+                  <a href="/detalles-prod-lego/" class="prod-ttl">Ollivanders™ y Túnicas de Madame Malkin</a>
                 </div>
                 <div class="cont">
                   <p class="prod-price">89,99 €</p>
                   <button>
-                    <img class="icono" src="imagenes/productos/bolsa.png" alt="icono bolsa">
+                    <img class="icono" src="/imagenes/productos/bolsa.png" alt="icono bolsa">
                     Añadir al carrito
                   </button>
                 </div>
@@ -214,23 +215,23 @@
 
               <div class="carrusel-card">
                 <div class="cont-img-prod">
-                  <a href="detalles-prod-lego.html">
-                    <img src="imagenes/productos/lego/prod-harrypotter-3.webp" alt="Producto LEGO Star Wars">
+                  <a href="/detalles-prod-lego/">
+                    <img src="/imagenes/productos/lego/prod-harrypotter-3.webp" alt="Producto LEGO Star Wars">
                   </a>
                 </div>
                 <div class="cont">
-                  <img class="icono" src="imagenes/productos/icono-edad.png" alt="incono edad">
+                  <img class="icono" src="/imagenes/productos/icono-edad.png" alt="incono edad">
                   <p>8+</p>
-                  <img class="icono" class="" src="imagenes/productos/icono-piezas.png" alt="incono piezas">
+                  <img class="icono" class="" src="/imagenes/productos/icono-piezas.png" alt="incono piezas">
                   <p>204</p>
                 </div>
                 <div>
-                  <a href="detalles-prod-lego.html" class="prod-ttl">Castillo de Hogwarts™: Clase de Encantamientos</a>
+                  <a href="/detalles-prod-lego/" class="prod-ttl">Castillo de Hogwarts™: Clase de Encantamientos</a>
                 </div>
                 <div class="cont">
                   <p class="prod-price">19,99 €</p>
                   <button>
-                    <img class="icono" src="imagenes/productos/bolsa.png" alt="icono bolsa">
+                    <img class="icono" src="/imagenes/productos/bolsa.png" alt="icono bolsa">
                     Añadir al carrito
                   </button>
                 </div>
@@ -238,23 +239,23 @@
 
               <div class="carrusel-card">
                 <div class="cont-img-prod">
-                  <a href="detalles-prod-lego.html">
-                    <img src="imagenes/productos/lego/prod-harrypotter-4.webp" alt="Producto LEGO Star Wars">
+                  <a href="/detalles-prod-lego/">
+                    <img src="/imagenes/productos/lego/prod-harrypotter-4.webp" alt="Producto LEGO Star Wars">
                   </a>
                 </div>
                 <div class="cont">
-                  <img class="icono" src="imagenes/productos/icono-edad.png" alt="incono edad">
+                  <img class="icono" src="/imagenes/productos/icono-edad.png" alt="incono edad">
                   <p>18+</p>
-                  <img class="icono" class="" src="imagenes/productos/icono-piezas.png" alt="incono piezas">
+                  <img class="icono" class="" src="/imagenes/productos/icono-piezas.png" alt="incono piezas">
                   <p>561</p>
                 </div>
                 <div>
-                  <a href="detalles-prod-lego.html" class="prod-ttl">Sombrero Seleccionador Parlante</a>
+                  <a href="/detalles-prod-lego/" class="prod-ttl">Sombrero Seleccionador Parlante</a>
                 </div>
                 <div class="cont">
                   <p class="prod-price">99,99€</p>
                   <button>
-                    <img class="icono" src="imagenes/productos/bolsa.png" alt="icono bolsa">
+                    <img class="icono" src="/imagenes/productos/bolsa.png" alt="icono bolsa">
                     Añadir al carrito
                   </button>
                 </div>
@@ -267,27 +268,27 @@
           <!-- productos disney -->
           <h2>Productos de LEGO® Disney</h2>
           <article class="prod">
-            <img class="carrusel-img" src="imagenes/productos/lego/prod-disney-img.png" alt="Imagen del carrusel de productos de Star Wars">
+            <img class="carrusel-img" src="/imagenes/productos/lego/prod-disney-img.png" alt="Imagen del carrusel de productos de Star Wars">
             <div class="carrusel-prods">
               <div class="carrusel-card">
                 <div class="cont-img-prod">
-                  <a href="detalles-prod-lego.html">
-                    <img src="imagenes/productos/lego/prod-disney-1.webp" alt="Producto LEGO Star Wars">
+                  <a href="/detalles-prod-lego/">
+                    <img src="/imagenes/productos/lego/prod-disney-1.webp" alt="Producto LEGO Star Wars">
                   </a>
                 </div>
                 <div class="cont">
-                  <img class="icono" src="imagenes/productos/icono-edad.png" alt="incono edad">
+                  <img class="icono" src="/imagenes/productos/icono-edad.png" alt="incono edad">
                   <p>18+</p>
-                  <img class="icono" class="" src="imagenes/productos/icono-piezas.png" alt="incono piezas">
+                  <img class="icono" class="" src="/imagenes/productos/icono-piezas.png" alt="incono piezas">
                   <p>2228</p>
                 </div>
                 <div>
-                  <a href="detalles-prod-lego.html" class="prod-ttl">Cabaña de Blancanieves y los Siete Enanitos</a>
+                  <a href="/detalles-prod-lego/" class="prod-ttl">Cabaña de Blancanieves y los Siete Enanitos</a>
                 </div>
                 <div class="cont">
                   <p class="prod-price">219,99 €</p>
                   <button>
-                    <img class="icono" src="imagenes/productos/bolsa.png" alt="icono bolsa">
+                    <img class="icono" src="/imagenes/productos/bolsa.png" alt="icono bolsa">
                     Añadir al carrito
                   </button>
                 </div>
@@ -295,23 +296,23 @@
 
               <div class="carrusel-card">
                 <div class="cont-img-prod">
-                  <a href="detalles-prod-lego.html">
-                    <img src="imagenes/productos/lego/prod-disney-2.webp" alt="Producto LEGO Star Wars">
+                  <a href="/detalles-prod-lego/">
+                    <img src="/imagenes/productos/lego/prod-disney-2.webp" alt="Producto LEGO Star Wars">
                   </a>
                 </div>
                 <div class="cont">
-                  <img class="icono" src="imagenes/productos/icono-edad.png" alt="incono edad">
+                  <img class="icono" src="/imagenes/productos/icono-edad.png" alt="incono edad">
                   <p>18+</p>
-                  <img class="icono" class="" src="imagenes/productos/icono-piezas.png" alt="incono piezas">
+                  <img class="icono" class="" src="/imagenes/productos/icono-piezas.png" alt="incono piezas">
                   <p>1103</p>
                 </div>
                 <div>
-                  <a href="detalles-prod-lego.html" class="prod-ttl">Magia Disney</a>
+                  <a href="/detalles-prod-lego/" class="prod-ttl">Magia Disney</a>
                 </div>
                 <div class="cont">
                   <p class="prod-price">99,99 €</p>
                   <button>
-                    <img class="icono" src="imagenes/productos/bolsa.png" alt="icono bolsa">
+                    <img class="icono" src="/imagenes/productos/bolsa.png" alt="icono bolsa">
                     Añadir al carrito
                   </button>
                 </div>
@@ -319,23 +320,23 @@
 
               <div class="carrusel-card">
                 <div class="cont-img-prod">
-                  <a href="detalles-prod-lego.html">
-                    <img src="imagenes/productos/lego/prod-disney-3.webp" alt="Producto LEGO Star Wars">
+                  <a href="/detalles-prod-lego/">
+                    <img src="/imagenes/productos/lego/prod-disney-3.webp" alt="Producto LEGO Star Wars">
                   </a>
                 </div>
                 <div class="cont">
-                  <img class="icono" src="imagenes/productos/icono-edad.png" alt="incono edad">
+                  <img class="icono" src="/imagenes/productos/icono-edad.png" alt="incono edad">
                   <p>6+</p>
-                  <img class="icono" class="" src="imagenes/productos/icono-piezas.png" alt="incono piezas">
+                  <img class="icono" class="" src="/imagenes/productos/icono-piezas.png" alt="incono piezas">
                   <p>1022</p>
                 </div>
                 <div>
-                  <a href="detalles-prod-lego.html" class="prod-ttl">100 Años de Iconos de la Animación Disney</a>
+                  <a href="/detalles-prod-lego/" class="prod-ttl">100 Años de Iconos de la Animación Disney</a>
                 </div>
                 <div class="cont">
                   <p class="prod-price">32,99 €</p>
                   <button>
-                    <img class="icono" src="imagenes/productos/bolsa.png" alt="icono bolsa">
+                    <img class="icono" src="/imagenes/productos/bolsa.png" alt="icono bolsa">
                     Añadir al carrito
                   </button>
                 </div>
@@ -343,23 +344,23 @@
 
               <div class="carrusel-card">
                 <div class="cont-img-prod">
-                  <a href="detalles-prod-lego.html">
-                    <img src="imagenes/productos/lego/prod-disney-4.webp" alt="Producto LEGO Star Wars">
+                  <a href="/detalles-prod-lego/">
+                    <img src="/imagenes/productos/lego/prod-disney-4.webp" alt="Producto LEGO Star Wars">
                   </a>
                 </div>
                 <div class="cont">
-                  <img class="icono" src="imagenes/productos/icono-edad.png" alt="incono edad">
+                  <img class="icono" src="/imagenes/productos/icono-edad.png" alt="incono edad">
                   <p>18+</p>
-                  <img class="icono" class="" src="imagenes/productos/icono-piezas.png" alt="incono piezas">
+                  <img class="icono" class="" src="/imagenes/productos/icono-piezas.png" alt="incono piezas">
                   <p>2193</p>
                 </div>
                 <div>
-                  <a href="detalles-prod-lego.html" class="prod-ttl">Disney Tim Burton: Pesadilla antes de Navidad</a>
+                  <a href="/detalles-prod-lego/" class="prod-ttl">Disney Tim Burton: Pesadilla antes de Navidad</a>
                 </div>
                 <div class="cont">
                   <p class="prod-price">199,99 €</p>
                   <button>
-                    <img class="icono" src="imagenes/productos/bolsa.png" alt="icono bolsa">
+                    <img class="icono" src="/imagenes/productos/bolsa.png" alt="icono bolsa">
                     Añadir al carrito
                   </button>
                 </div>
@@ -375,11 +376,12 @@
 
 
   <!-- FOOTER -->
-  <div id="footer-container-js"></div>
-  
+  <!-- <div id="footer-container-js"></div> -->
+  {% include "footer.html" %}
+
 
   <!-- inserción de HEADER y FOOTER con JS -->
-  <script type="module">
+  <!-- <script type="module">
     import loaderHTML from "./js/loaderHTML.js";
 
     const headerContainer = document.getElementById('header-container-js');
@@ -387,7 +389,7 @@
 
     const footerContainer = document.getElementById('footer-container-js');
     footerContainer.innerHTML = loaderHTML.loaderFooter();
-  </script>
+  </script> -->
   
 </body>
 </html>

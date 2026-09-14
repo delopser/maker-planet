@@ -7,13 +7,14 @@
   <meta name="keywords" content="maker planet, juguetes, sets de construcción">
   <meta name="author" content="Sergio Delgado López">
   <title>Detalles producto de Lego</title>
-  <link rel="stylesheet" href="sass/carrito.scss">
+  <link rel="stylesheet" href="/sass/carrito.scss">
   <link rel="icon" type="image/x-icon" href="/imagenes/favicon.ico">
 </head>
 <body>
   
   <!-- HEADER, NAV -->
-  <div id="header-container-js"></div>
+  <!-- <div id="header-container-js"></div> -->
+  {% include "header.html" %}
 
 <!-- MAIN -->
 <main id="carrito">
@@ -24,7 +25,7 @@
             <div class="productos">
                 <article class="producto">
                     <div class="producto-contenido">
-                        <img src="imagenes/productos/lego/prod-starwars-1.webp" alt="Grogu con Aerocuna" class="producto-imagen">
+                        <img src="/imagenes/productos/lego/prod-starwars-1.webp" alt="Grogu con Aerocuna" class="producto-imagen">
                         <div class="producto-detalles">
                             <h2>Grogu™ con Aerocuna</h2>
                             <div class="producto-precio">
@@ -37,14 +38,14 @@
                             <button>+</button>
                         </div>
                         <a href="#" class="producto-eliminar">
-                            <img src="imagenes/productos/papelera.png" alt="Eliminar producto">
+                            <img src="/imagenes/productos/papelera.png" alt="Eliminar producto">
                         </a>
                     </div>
                 </article>
 
                 <article class="producto">
                     <div class="producto-contenido">
-                        <img src="imagenes/productos/magnatiles/magnatiles-1-1.png" alt="Tienda Hermanas Manitas" class="producto-imagen">
+                        <img src="/imagenes/productos/magnatiles/magnatiles-1-1.png" alt="Tienda Hermanas Manitas" class="producto-imagen">
                         <div class="producto-detalles">
                             <h2>Tienda de ropa de las Hermanas Manitas</h2>
                             <div class="producto-precio">
@@ -57,7 +58,7 @@
                             <button>+</button>
                         </div>
                         <a href="#" class="producto-eliminar">
-                            <img src="imagenes/productos/papelera.png" alt="Eliminar producto">
+                            <img src="/imagenes/productos/papelera.png" alt="Eliminar producto">
                         </a>
                     </div>
                 </article>
@@ -73,7 +74,7 @@
                     <p class="importe-total">Total <span title="precio total">139,98 €</span></p>
                 </div>
                 
-                <a href="pagos.html"><button class="btn-pago">Tramitar pedido</button></a>
+                <a href="/pagos/"><button class="btn-pago">Tramitar pedido</button></a>
                 
                 <div class="metodos-pago">
                     <h3>Métodos de pago aceptados</h3>
@@ -90,11 +91,11 @@
 
 
   <!-- FOOTER -->
-  <div id="footer-container-js"></div>
-  
+  <!-- <div id="footer-container-js"></div> -->
+  {% include "footer.html" %}
 
   <!-- inserción de HEADER y FOOTER con JS -->
-  <script type="module">
+  <!-- <script type="module">
     import loaderHTML from "./js/loaderHTML.js";
 
     const headerContainer = document.getElementById('header-container-js');
@@ -102,7 +103,7 @@
 
     const footerContainer = document.getElementById('footer-container-js');
     footerContainer.innerHTML = loaderHTML.loaderFooter();
-  </script>
+  </script> -->
   
 </body>
 </html>
