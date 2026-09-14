@@ -26,3 +26,10 @@ Thumbs.db
 *.njsproj
 *.sln
 *.swp
+
+# Eleventy
+_site/
+
+# Vite compiled output
+dist/
+.vite/
