@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "clean": "rm -rf _site",
+    "clean": "if exist _site rmdir /s /q _site",
     "build:html": "eleventy",
     "watch:html": "eleventy --watch",
     "dev": "eleventy && (vite _site & eleventy --watch)",

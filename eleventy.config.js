@@ -1,8 +1,12 @@
-export default function(eleventy) {
-  eleventy.addPassthroughCopy("imagenes");
-  eleventy.addPassthroughCopy("audios");
-  eleventy.addPassthroughCopy("videos");
-  eleventy.addPassthroughCopy("js");
+export default function(eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("imagenes");
+  eleventyConfig.addPassthroughCopy("audios");
+  eleventyConfig.addPassthroughCopy("videos");
+  eleventyConfig.addPassthroughCopy("js");
+  
+  eleventyConfig.addPassthroughCopy("sass");
+
+  eleventyConfig.addWatchTarget("./sass/");
 
   return {
     dataTemplateEngine: "liquid",

@@ -111,19 +111,19 @@
         <script>
           // JS para que al hacer hover en imagen izquierda se quede
           // pillada en la derecha y con borde de color
-          document.addEventListener("DOMContentLoaded", () => {
-              const miniaturas = document.querySelectorAll(".imagenes-lateral img");
-              const imagenesPrincipales = document.querySelectorAll(".main-image img");
+            //   document.addEventListener("DOMContentLoaded", () => {
+            //       const miniaturas = document.querySelectorAll(".imagenes-lateral img");
+            //       const imagenesPrincipales = document.querySelectorAll(".main-image img");
 
-              miniaturas.forEach((miniatura, index) => {
-                  miniatura.addEventListener("mouseenter", () => {
-                      imagenesPrincipales.forEach((img, i) => {
-                          img.style.opacity = i === index ? 1 : 0;
-                          miniaturas[i].style.outline = i === index ? "4px solid #b3ae85" : "none";
-                      });
-                  });
-              });
-          });
+            //       miniaturas.forEach((miniatura, index) => {
+            //           miniatura.addEventListener("mouseenter", () => {
+            //               imagenesPrincipales.forEach((img, i) => {
+            //                   img.style.opacity = i === index ? 1 : 0;
+            //                   miniaturas[i].style.outline = i === index ? "4px solid #b3ae85" : "none";
+            //               });
+            //           });
+            //       });
+            //   });
         </script>
 
         <!-- DETALLES -->
