@@ -136,17 +136,27 @@ body{
             }
 
             
-            /* PRODUCT IMAGES LOGIC */
-            &:has(.imagenes-lateral img:nth-child(2):hover) .main-image img:nth-child(2){
-                opacity: 1;
-                z-index: 1;
+            /* SHOW PRODUCT IMAGE SELECTED */
+            & .imagenes-lateral img:hover {
+                outline: 2px solid #e0e0e0 ;
+                cursor: pointer;
             }
-            
-            &:has(.imagenes-lateral img:nth-child(2):hover) .main-image img:nth-child(1),
-            &:has(.imagenes-lateral img:nth-child(2):hover) .main-image img:nth-child(3),
-            &:has(.imagenes-lateral img:nth-child(2):hover) .main-image img:nth-child(4){
-                opacity: 0;
-                z-index: -1;
+            & .imagenes-lateral img:focus {
+                outline: 3px solid #c2c2c2 ;
+            }
+
+            @for $i from 1 through 4 {
+                &:has(.imagenes-lateral img:nth-child(#{$i}):focus-within) {
+                    .main-image img:nth-child(#{$i}) {
+                        opacity: 1;
+                        z-index: 1;
+                    }
+
+                    .main-image img:not(:nth-child(#{$i})) {
+                        opacity: 0;
+                        z-index: -1;
+                    }
+                }
             }
 
         }
