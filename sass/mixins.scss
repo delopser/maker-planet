@@ -438,13 +438,10 @@
 
         & div{
             display: inline;
-
-            &:not(:last-child){
-                margin-right: 1em;
-                align-items: center;
-                display: inline-flex;
-                gap: 0.2em;
-            }
+            margin-right: 1em;
+            align-items: center;
+            display: inline-flex;
+            gap: 0.15em;
         }
         
         & div *{
@@ -487,6 +484,10 @@
             }
         }
 
+        & .footer-redes {
+            transform: translateY(15%);
+        }
+
         & .footer-redes a{
             margin-right: 0.5em;
 
@@ -505,7 +506,7 @@
                 margin-right: 5vw;
                 overflow: hidden;
                 position: relative;
-                transform: translateY(30%);
+                transform: translateY(37%);
                 
                 a {
                     display: block;
