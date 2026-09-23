@@ -70,6 +70,7 @@ body{
 
         // textos de ubicacion
         :is(span, em){
+            margin-right: 0.6em;
             & a{
                 text-decoration: none;
                 color: inherit;
@@ -82,7 +83,6 @@ body{
             &:where(span):last-child{
                 color: rgb(102, 102, 167);
             }
-            margin-right: 0.6em;
         }
     }
 
