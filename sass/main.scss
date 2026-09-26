@@ -357,7 +357,7 @@ body{
     & .testimonios-cards{
         display: flex;
         margin-left: 70em;
-        animation: scroll-t-cards 45s linear infinite;
+        animation: scroll-t-cards 49s linear infinite;
         color: darken($color: $txt-color, $amount: 10);
 
         & .t-card{
@@ -451,11 +451,8 @@ body{
     0% {
         transform: translateX(0);
     }
-    50% {
-        transform: translateX(-58vw);
-    }
     100% {
-        transform: translateX(0);
+        transform: translateX(-50%);
     }
 }
 
