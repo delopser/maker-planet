@@ -50,6 +50,11 @@ The primary objective of this project is to demonstrate core Frontend fundamenta
    ```
 
 
+## Known Limitations
+
+- **Simultaneous Overlay Controls (Search & Menu):** Without JavaScript to manipulate DOM state, the search bar and the hamburger menu toggle visibility via independent native `checkbox` elements. Opting for `checkbox` rather than `radio` inputs preserves the native multi-click toggle behavior (allowing a component to be closed by clicking it again). Consequently, this introduces a minor, visually managed UI overlap if both toggles are triggered at the same time.
+
+
 ## License
 
 [MIT](LICENSE) - free to use, modify and distribute.

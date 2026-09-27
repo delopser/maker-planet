@@ -49,6 +49,12 @@ El objetivo principal de este proyecto es demostrar los fundamentos clave del Fr
    cd maker-planet
    ```
 
+
+## Limitaciones conocidas
+
+- **Control de Desplegables Simultáneos (Lupa y Menú):** Al prescindir de JavaScript, la barra de búsqueda y el menú lateral se gestionan con elementos `checkbox` independientes. Se priorizó el uso de `checkbox` sobre `radio` para permitir que el usuario pueda abrir y cerrar un mismo menú con un segundo clic; esto introduce la posibilidad de activar ambos en paralelo, generando un solapamiento visual que ha sido controlado mediante estilos.
+
+
 ## Licencia
 
 [MIT](LICENSE) - uso, modificación y distribución libre.
