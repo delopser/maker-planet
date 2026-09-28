@@ -1,7 +1,7 @@
 @import "mixins.scss";
 
 /* variables */
-    $hero-text-size: 4vw; 
+    $hero-text-size: 3.3vw; 
     $hero-text-color: rgb(255, 255, 255);
     $secondary-bgcolor: #e6e6e6;
     $cards-bgcolor: #d8d8d8;
@@ -25,97 +25,90 @@ body{
 @include nav-funct-mix();
 
 /*-- HERO --*/
-#hero{
-    height: auto;
-    max-height: 100vh;
+#hero {
+    height: 100vh;
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(to right,
-    #3e2a1f,
-    #593a1e,
-    #24335c,
-    #33420c,
-    #593a1e,
-    #3e2a1f,
+    background: linear-gradient(
+        90deg,
+        #3e2a1f,
+        #593a1e,
+        #24335c,
+        #33420c,
+        #593a1e,
+        #3e2a1f
     );
-    background-size: 400%;
-    animation: hero-new-bgcolor 70s linear infinite;
+    background-size: 400% 400%;
+    animation: hero-new-bgcolor 70s ease infinite;
 
-    & .hero-fase{
+    .hero-fase {
         height: 100vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
 
-        & .hero-text{
+        /* --- LEFT SIDE: TEXT --- */
+        .hero-text {
             font-size: $hero-text-size;
             color: $hero-text-color;
             margin: auto;
+            font-weight: bold;
 
-            & .hero-text-change{
+            h1 {
+                margin: 0;
+                line-height: 1.1;
+            }
+
+            .hero-text-change {
                 overflow: hidden;
-                height: 1.1em;
+                height: 1.2em;
 
-                @for $i from 1 to 4 {
-                    & .txt-chng-#{$i} {
-                        @if $i == 1 {
-                            animation: hero-new-text 2s cubic-bezier(0.25, 0.8, 0.25, 1) 6s forwards,
-                            hero-new-text-reverse 2s cubic-bezier(0.25, 0.8, 0.25, 1) 48s forwards;
-                        }
-                        @if $i == 2 {
-                            animation: hero-new-text 2s cubic-bezier(0.25, 0.8, 0.25, 1) 12s forwards,
-                            hero-new-text-reverse 2s cubic-bezier(0.25, 0.8, 0.25, 1) 42s forwards;
-                        }
-                        @if $i == 3 {
-                            animation: hero-new-text 2s cubic-bezier(0.25, 0.8, 0.25, 1) 18s forwards,
-                            hero-new-text-reverse 2s cubic-bezier(0.25, 0.8, 0.25, 1) 36s forwards;
-                        }
-                        @if $i == 4 {
-                            animation: hero-new-text 2s cubic-bezier(0.25, 0.8, 0.25, 1) 24s forwards,
-                                        hero-new-text-reverse 2s cubic-bezier(0.25, 0.8, 0.25, 1) 30s forwards;
-                                    }
-                                }
-                            }
-                        }
-                    }
+                .txt-chng-1,
+                .txt-chng-2,
+                .txt-chng-3,
+                .txt-chng-4 {
+                    height: 1.2em;
+                    line-height: 1.2em;
+                    display: block;
+                    white-space: nowrap; // avoid weird line breaks
+                    will-change: transform;
+                    animation: hero-slide-loop 16s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+                }
+            }
+        }
 
-                    & .hero-image{
-                        box-shadow: -5px 0 20px rgba(51, 51, 51, 0.507);
+        /* --- RIGHT SIDE: VIDEO --- */
+        .hero-image {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            will-change: transform;
 
-                        overflow: hidden;
-                        max-height: 100vh;
-                        display: grid;
-                        justify-content: center;
+            // container only move the videos up and down
+            animation: hero-rack-slide 16s cubic-bezier(0.65, 0, 0.35, 1) infinite;
 
-                        & video{
-                            width: auto;
-                            height: 100vh;
-                        }
+            video {
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+                flex-shrink: 0;
 
-                        @for $i from 1 to 4 {
-                            & .video-change-#{$i} {
-                                @if $i == 1 {
-                                    animation: hero-new-video 2s cubic-bezier(0.25, 0.8, 0.25, 1) 6s forwards,
-                                                hero-new-video-reverse 2s cubic-bezier(0.25, 0.8, 0.25, 1) 48s forwards;
-                                }
-                                @if $i == 2 {
-                                    animation: hero-new-video 2s cubic-bezier(0.25, 0.8, 0.25, 1) 12s forwards,
-                                                hero-new-video-reverse 2s cubic-bezier(0.25, 0.8, 0.25, 1) 42s forwards;
-                                }
-                                @if $i == 3 {
-                                    animation: hero-new-video 2s cubic-bezier(0.25, 0.8, 0.25, 1) 18s forwards,
-                                                hero-new-video-reverse 2s cubic-bezier(0.25, 0.8, 0.25, 1) 36s forwards;
-                                }
-                                @if $i == 4 {
-                                    animation: hero-new-video 2s cubic-bezier(0.25, 0.8, 0.25, 1) 24s forwards,
-                                                hero-new-video-reverse 2s cubic-bezier(0.25, 0.8, 0.25, 1) 30s forwards;
-                                }
-                            }
-                        }
-
-                    }
+                &.video-change-1 {
+                    animation: hero-darken-1 16s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+                }
+                &.video-change-2 {
+                    animation: hero-darken-2 16s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+                }
+                &.video-change-3 {
+                    animation: hero-darken-3 16s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+                }
+                &.video-change-4 {
+                    animation: hero-darken-4 16s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+                }
+            }
+        }
     }
 }
-
 
 /*-- FRASE EMPRESA --*/
 .texto-comun {
@@ -388,54 +381,48 @@ body{
 
 
 /*-- animaciones --*/
-@keyframes hero-new-video{
-    0%{
-        filter: brightness(0.9);
-    }
-    100%{
-        margin-top: -60%;
-        filter: brightness(0);
-    }
-}
-@keyframes hero-new-video-reverse{
-    0%{
-        filter: brightness(0.4);
-    }
-    100%{
-        margin-top: 0;
-        filter: brightness(1);
-    }
-}
-
-@keyframes hero-new-text {
-    0% { }
-    100% {
-        margin-top: -1.2em;
-    }
-}
-@keyframes hero-new-text-reverse {
-    0% { }
-    100% {
-        margin-top: 0em;
-    }
+@keyframes hero-slide-loop {
+  0%, 20%   { transform: translateY(0); }        // state 1
+  25%, 45%  { transform: translateY(-100%); }    // state 2
+  50%, 70%  { transform: translateY(-200%); }    // state 3
+  75%, 95%  { transform: translateY(-300%); }    // state 4
+  100%      { transform: translateY(0); }        // restart
 }
 
 @keyframes hero-new-bgcolor {
-    0% {
-        background-position: 0%;
-      }
-      25% {
-        background-position: 100%;
-      }
-      50% {
-        background-position: 200%;
-      }
-      75% {
-        background-position: 300%;
-      }
-      100% {
-        background-position: 0%;
-      }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes hero-rack-slide {
+  0%, 20%   { transform: translateY(0); }
+  25%, 45%  { transform: translateY(-100%); }
+  50%, 70%  { transform: translateY(-200%); }
+  75%, 95%  { transform: translateY(-300%); }
+  100%      { transform: translateY(0); }
+}
+
+@keyframes hero-darken-1 {
+  0%, 20%   { filter: brightness(1); }
+  25%, 95%  { filter: brightness(0.15); }
+  100%      { filter: brightness(1); }
+}
+
+@keyframes hero-darken-2 {
+  0%, 45%   { filter: brightness(1); }
+  50%, 95%  { filter: brightness(0.15); }
+  100%      { filter: brightness(1); }
+}
+
+@keyframes hero-darken-3 {
+  0%, 70%   { filter: brightness(1); }
+  75%, 95%  { filter: brightness(0.15); }
+  100%      { filter: brightness(1); }
+}
+
+@keyframes hero-darken-4 {
+  0%, 100%  { filter: brightness(1); }
 }
 
 @keyframes frase-txt-aparece {
