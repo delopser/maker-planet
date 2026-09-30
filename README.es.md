@@ -6,6 +6,7 @@
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
 [![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white)](https://sass-lang.com/)
+[![AEO Ready](https://img.shields.io/badge/AEO-llms.txt-000000?style=flat-square&logo=markdown&logoColor=white)](llms.txt)
 [![Figma](https://img.shields.io/badge/Dise%C3%B1o_en_Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)](https://www.figma.com/design/ixcKn5POi257WDCrwFVoz2/trrabajo-sass?node-id=0-1&t=Lwu2lKvQxJA6K5rZ-1)
 [![Estado](https://img.shields.io/badge/Estado-Completado-success?style=flat-square)](#)
 
@@ -26,6 +27,7 @@ El objetivo principal de este proyecto es demostrar los fundamentos clave del Fr
 - **HTML5:** Arquitectura semántica orientada a la accesibilidad (A11y) y a la estructura para SEO.
 - **Sass (SCSS):** Arquitectura modular estructurada con mixins y utilidades de maquetación.
 - **Gestión de Estado con CSS Puro:** Componentes interactivos desarrollados mediante selectores nativos (`:checked`, `:target` y pseudoclases de estado).
+- **AEO (Answer Engine Optimization):** Compatibilidad con navegadores y agentes de inteligencia artificial mediante el estándar [`llms.txt`](llms.txt) (con soporte multilenguaje [`llms-es.txt`](llms-es.txt)).
 
 
 ## Arquitectura y Características
@@ -33,6 +35,7 @@ El objetivo principal de este proyecto es demostrar los fundamentos clave del Fr
 - **Arquitectura Centrada en CSS:** Componentes dinámicos impulsados exclusivamente por el motor de renderizado de CSS y selectores avanzados.
 - **Diseño Adaptable (Responsive):** Enfoque *mobile-first* construido sobre CSS Grid y Flexbox.
 - **Rendimiento Optimizado:** Cero sobrecarga de ejecución en tiempo de JS, garantizando un despliegue veloz del primer renderizado de contenido (FCP).
+- **Optimización para Motores de Respuesta (AEO):** Incluye manifiesto en formato Markdown en la raíz del proyecto para facilitar el rastreo y procesamiento semántico estructurado por parte de LLMs y agentes conversacionales.
 
 
 ## Guía del Proyecto

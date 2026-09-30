@@ -1,0 +1,45 @@
+# MakerPlanet
+
+> Dummy online store for construction kits and educational toys, developed as a web layout and static frontend showcase.
+
+## Overview
+MakerPlanet is a fictional e-commerce platform focused on building blocks and construction toys, developed by Sergio Delgado López. The project uses Eleventy (11ty) as a static site generator, Vite for asset bundling, and modular SASS/SCSS for visual styling.
+
+*Note: The primary project documentation and repository standards are in English, with secondary support for Spanish.*
+
+## Brands & Categories
+- **LEGO**: Thematic building block sets.
+  - LEGO Star Wars
+  - LEGO Harry Potter
+  - LEGO Disney
+- **Mega Bloks**: Construction blocks for early childhood development and thematic collections.
+  - Mega Bloks Kids
+  - Mega Bloks Hallo
+  - Mega Bloks Dragons
+- **Magna-Tiles**: 3D magnetic geometric tiles.
+  - Magna-Tiles Kids
+  - Magna-Tiles Desert
+  - Magna-Tiles Sea
+- **Meccano**: Metal and plastic engineering/construction kits with tools.
+  - Meccano Race
+  - Meccano Sky
+  - Meccano Wheels
+
+## Page Structure & Navigation
+- `/index.html`: Main landing page featuring a hero slider, featured brands, advantages, and client testimonials.
+- `/prod-lego.html`: Product catalog for LEGO.
+- `/prod-megabloks.html`: Product catalog for Mega Bloks.
+- `/prod-magnatiles.html`: Product catalog for Magna-Tiles.
+- `/prod-meccano.html`: Product catalog for Meccano.
+- `/detalles-prod-lego.html`: Detailed single product view.
+- `/carrito.html`: Shopping cart summary.
+- `/pagos.html`: Simulated checkout and payment gateway flow.
+- `/contactanos.html`: Support and contact form.
+- `/politicas-privacidad.html`: Legal information and privacy policy.
+
+## Technical Architecture
+- **Static Site Generator**: Eleventy (`eleventy.config.js`)
+- **Bundler / Build Tool**: Vite (`vite.config.js`)
+- **Styles**: Modular SASS/SCSS (`/sass/main.scss`, `/sass/mixins.scss`, per-page stylesheets)
+- **Components**: Reusable HTML partials in `/_includes/` (`header.html`, `footer.html`)
+- **License**: MIT

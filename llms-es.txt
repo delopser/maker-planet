@@ -1,0 +1,43 @@
+# MakerPlanet
+
+> Tienda online ficticia de kits de construcción y juguetes educativos desarrollada como demostración de maquetación web y habilidades frontend estáticas.
+
+## Información General
+MakerPlanet es una plataforma de e-commerce ficticia enfocada en la venta de juegos de bloques y construcción, desarrollada por Sergio Delgado López. El proyecto utiliza Eleventy (11ty) como generador de sitios estáticos, Vite para la compilación de assets y SASS/SCSS modular para los estilos visuales.
+
+## Catálogo de Marcas y Categorías
+- **LEGO**: Sets temáticos de construcción por bloques.
+  - LEGO Star Wars
+  - LEGO Harry Potter
+  - LEGO Disney
+- **Mega Bloks**: Bloques de construcción para desarrollo infantil y colecciones temáticas.
+  - Mega Bloks Kids
+  - Mega Bloks Hallo
+  - Mega Bloks Dragons
+- **Magna-Tiles**: Piezas geométricas magnéticas para construcciones en 3D.
+  - Magna-Tiles Niños
+  - Magna-Tiles Desierto
+  - Magna-Tiles Mar
+- **Meccano**: Kits de ingeniería y construcción metálica/plástica con herramientas.
+  - Meccano Race
+  - Meccano Sky
+  - Meccano Wheels
+
+## Estructura de Páginas y Navegación
+- `/index.html`: Página principal con slider hero, marcas destacadas, ventajas competitivas y testimonios de clientes.
+- `/prod-lego.html`: Catálogo de productos de la marca LEGO.
+- `/prod-megabloks.html`: Catálogo de productos de la marca Mega Bloks.
+- `/prod-magnatiles.html`: Catálogo de productos de la marca Magna-Tiles.
+- `/prod-meccano.html`: Catálogo de productos de la marca Meccano.
+- `/detalles-prod-lego.html`: Vista detallada de producto individual.
+- `/carrito.html`: Resumen de la cesta de la compra.
+- `/pagos.html`: Flujo de checkout y pasarela de pago simulada.
+- `/contactanos.html`: Formulario de soporte y contacto.
+- `/politicas-privacidad.html`: Información legal y políticas de privacidad.
+
+## Arquitectura Técnica
+- **Generador Estático**: Eleventy (`eleventy.config.js`)
+- **Bundler / Build Tool**: Vite (`vite.config.js`)
+- **Estilos**: SASS/SCSS modularizado (`/sass/main.scss`, `/sass/mixins.scss`, estilos por página)
+- **Componentes**: Parciales HTML reutilizables en `/_includes/` (`header.html`, `footer.html`)
+- **Licencia**: MIT
