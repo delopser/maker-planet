@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compra tus juguetes de construcción favoritos">
+  <meta name="keywords" content="maker planet, juguetes, sets de construcción">
+  <meta name="author" content="Sergio Delgado López">
+  <title>Detalles producto de Lego</title>
+  <link rel="stylesheet" href="../sass/carrito.scss">
+  <link rel="icon" type="image/x-icon" href="../imagenes/favicon.ico">
+</head>
+<body>
+  
+  <!-- HEADER, NAV -->
+  {% include "header.html" %}
+
+<!-- MAIN -->
+<main id="carrito">
+    <h1>Mi carrito (2)</h1>
+    
+    <div class="contenedor-columnas">
+        <div class="columna-izquierda">
+            <div class="productos">
+                <article class="producto">
+                    <div class="producto-contenido">
+                        <img src="../imagenes/productos/lego/prod-starwars-1.webp" alt="Grogu con Aerocuna" class="producto-imagen">
+                        <div class="producto-detalles">
+                            <h2>Grogu™ con Aerocuna</h2>
+                            <div class="producto-precio">
+                                <span class="precio">99,99 €</span>
+                            </div>
+                        </div>
+                        <div class="producto-cantidad">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <a href="#" class="producto-eliminar">
+                            <img src="../imagenes/productos/papelera.png" alt="Eliminar producto">
+                        </a>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="producto-contenido">
+                        <img src="../imagenes/productos/magnatiles/magnatiles-1-1.png" alt="Tienda Hermanas Manitas" class="producto-imagen">
+                        <div class="producto-detalles">
+                            <h2>Tienda de ropa de las Hermanas Manitas</h2>
+                            <div class="producto-precio">
+                                <span class="precio">39,99 €</span>
+                            </div>
+                        </div>
+                        <div class="producto-cantidad">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <a href="#" class="producto-eliminar">
+                            <img src="../imagenes/productos/papelera.png" alt="Eliminar producto">
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="columna-derecha">
+            <div class="resumen">
+                <h2>Resumen del pedido</h2>
+                <div class="total">
+                    <p>Valor del pedido (2 artículos) <span title="total">139,98 €</span></p>
+                    <p class="envio-gratis">¡Felicidades! Recibirá su pedido de forma GRATUITA</p>
+                    <p class="importe-total">Total <span title="precio total">139,98 €</span></p>
+                </div>
+                
+                <a href="./pagos.html"><button class="btn-pago">Tramitar pedido</button></a>
+                
+                <div class="metodos-pago">
+                    <h3>Métodos de pago aceptados</h3>
+                    <div class="tarjetas">
+                        <span class="visa">VISA</span>
+                        <span class="mastercard">Mastercard</span>
+                        <span class="paypal">PayPal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+  <!-- FOOTER -->
+  {% include "footer.html" %}
+  
+</body>
+</html>

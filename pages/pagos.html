@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compra tus juguetes de construcción favoritos">
+  <meta name="keywords" content="maker planet, juguetes, sets de construcción">
+  <meta name="author" content="Sergio Delgado López">
+  <title>Detalles producto de Lego</title>
+  <link rel="icon" type="image/x-icon" href="../imagenes/favicon.ico">
+  <link rel="stylesheet" href="../sass/pagos.scss">
+</head>
+<body>
+  
+  <!-- HEADER, NAV -->
+  {% include "header.html" %}
+
+
+    <!-- MAIN -->
+    <main id="pagos">
+        <div class="contenedor-columnas">
+            <div class="columna-izquierda">
+                <!-- Proceso de pago -->
+                <div class="proceso-pago">
+                    <h2><span class="numero-paso">1</span> Datos de envío</h2>
+                    
+                    <details open>
+                        <summary>Elija el método de envío</summary>
+                        <div class="shipping-methods">
+                            <label class="method-option">
+                                <input type="radio" name="shipping-method" checked>
+                                <span>Envío estándar (3-5 días)</span>
+                            </label>
+                            <label class="method-option">
+                                <input type="radio" name="shipping-method">
+                                <span>Recogida en tienda</span>
+                            </label>
+                        </div>
+                    </details>
+    
+                    <details open>
+                        <summary>Información de contacto</summary>
+                        <div class="shipping-details">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Nombre" pattern="[A-Za-zÀ-ÿ\s]{2,50}" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Apellidos" pattern="[A-Za-zÀ-ÿ\s]{2,50}" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" placeholder="Teléfono" pattern="[0-9]{9}" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                                </div>
+                                <div class="form-group full-width">
+                                    <input type="text" placeholder="Dirección" pattern="[A-Za-zÀ-ÿ0-9\s\.,/-]{5,100}" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Código postal" pattern="[0-9]{5}" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Ciudad" pattern="[A-Za-zÀ-ÿ\s]{2,50}" required>
+                                </div>
+                                <div class="form-group">
+                                    <select required>
+                                        <option value="">País</option>
+                                        <option value="España">España</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+    
+                    <h2><span class="numero-paso">2</span> Método de pago</h2>
+                    <div class="payment-methods">
+                        <div class="method-selector">
+                            <div class="method active">
+                                <input type="radio" name="payment-method" checked>
+                                <span>Tarjeta de crédito/débito</span>
+                            </div>
+                            <div class="method">
+                                <input type="radio" name="payment-method">
+                                <span>PayPal</span>
+                            </div>
+                        </div>
+    
+                        <div class="card-details">
+                            <div class="form-row">
+                                <input type="text" placeholder="Número de tarjeta" pattern="[0-9]{16}" required>
+                            </div>
+                            <div class="form-row">
+                                <input type="text" placeholder="MM/AA" pattern="(0[1-9]|1[0-2])\/([0-9]{2})" required>
+                                <input type="text" placeholder="CVV" pattern="[0-9]{3,4}" required>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Términos y botón -->
+                    <div class="terms-section">
+                        <label class="terms-check">
+                            <input type="checkbox" required>
+                            <span>Acepto los Términos y condiciones</span>
+                        </label>
+                    </div>
+    
+                    <button class="btn-pago">
+                        Finalizar compra
+                        <span class="total-amount">139,98 €</span>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Columna derecha - Resumen -->
+            <div class="columna-derecha">
+                <div class="resumen-pedido">
+                    <div class="resumen">
+                        <h2>Resumen del pedido</h2>
+                        <div class="total">
+                            <div class="linea-resumen">
+                                <span>Subtotal</span>
+                                <span>139,98 €</span>
+                            </div>
+                            <div class="linea-resumen">
+                                <span>Envío estándar</span>
+                                <span>Gratis</span>
+                            </div>
+                            <div class="linea-resumen total-final">
+                                <span>Importe total</span>
+                                <span>139,98 €</span>
+                            </div>
+                            <div class="iva-incluido">
+                                IVA incluido 24,29 €
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="detalles-pedido">
+                        <h2>Detalles del pedido</h2>
+                        <div class="lista-productos">
+                            <div class="producto-resumen">
+                                <div class="info-producto">
+                                    <h3>Grogu™ con Aerocuna</h3>
+                                    <div class="detalle-precio">
+                                        <span>99,99 €</span>
+                                        <span class="cantidad">Uds. 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="producto-resumen">
+                                <div class="info-producto">
+                                    <h3>Tienda de ropa de las Hermanas Manitas</h3>
+                                    <div class="detalle-precio">
+                                        <span>39,99 €</span>
+                                        <span class="cantidad">Uds. 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+  <!-- FOOTER -->
+  {% include "footer.html" %}
+  
+</body>
+</html>
