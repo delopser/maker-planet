@@ -13,7 +13,11 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "sass": "^1.83.1",
     "vite": "^5.4.9"
+  },
+  "dependencies": {
+    "@11ty/eleventy-img": "^6.0.4"
   }
 }
