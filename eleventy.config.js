@@ -13,8 +13,8 @@ export default function(eleventyConfig) {
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "liquid",
     dir: {
-      input: ".",
-      includes: "_includes",
+      input: "pages",
+      includes: "../_includes",
       output: "_site"
     }
   };
