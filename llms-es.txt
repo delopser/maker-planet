@@ -15,13 +15,13 @@ MakerPlanet es una plataforma de e-commerce ficticia enfocada en la venta de jue
   - Mega Bloks Hallo
   - Mega Bloks Dragons
 - **Magna-Tiles**: Piezas geométricas magnéticas para construcciones en 3D.
-  - Magna-Tiles Niños
-  - Magna-Tiles Desierto
-  - Magna-Tiles Mar
+  - Magna-Tiles Classics
+  - Magna-Tiles Adventure
+  - Magna-Tiles Animals
 - **Meccano**: Kits de ingeniería y construcción metálica/plástica con herramientas.
-  - Meccano Race
-  - Meccano Sky
-  - Meccano Wheels
+  - Meccano Builders
+  - Meccano Masters
+  - Meccano Pro
 
 ## Estructura de Páginas y Navegación
 - `/index.html`: Página principal con slider hero, marcas destacadas, ventajas competitivas y testimonios de clientes.
