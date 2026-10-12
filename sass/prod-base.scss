@@ -243,13 +243,16 @@
                     
                     & .carrusel-card {
                         flex: 0 0 340px;
-                        box-shadow: 0 0 8px rgba(97, 47, 0, 0.363);
                         display: grid;
                         grid-template-rows: 50% 10% 10% 30%;
-                        border-radius: 8px;
+                        // border-radius: 8px;
+                        border-radius: 16px;
                         padding: 1.5em;
                         font-size: 1em;
                         font-weight: bold;
+                        background-color: #ffffff2e;
+                        box-shadow: 0 0 8px rgb(59 59 59 / 9%);
+                        border: 1px solid #2525251a;
 
                         & .prod-ttl{
                             font-size: 1.4em;
@@ -263,6 +266,10 @@
                         & a{
                             color: $txt-color;
                             text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
                         }
 
                         & .icono{
